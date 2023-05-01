@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyPageFragment">
+
+    <!--    프로필 사진란 -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="353dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="88dp"
+            android:layout_height="108dp"
+            android:layout_marginLeft="10dp"
+            android:clipToOutline="true"
+            android:src="@drawable/profileimage"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="258dp">
+
+            <TextView
+                android:fontFamily="@font/korea1"
+                android:id="@+id/username"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="이름 : "
+                android:letterSpacing="0.8"
+                android:textColor="@color/weakPurple"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="149dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <TextView
+                android:fontFamily="@font/korea1"
+                android:id="@+id/userEmail"
+                android:layout_width="246dp"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="이메일 : "
+                android:textColor="@color/weakPurple"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="149dp"
+                tools:layout_editor_absoluteY="298dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logoutBtn"
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_circle2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/activity_login_kakao_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/logo_kako_login" />
+
+        <TextView
+            android:id="@+id/activity_login_kakao_text"
+            android:layout_width="19dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="3"
+            android:letterSpacing="0.4"
+            android:text="로그아웃"
+            android:textColor="@color/kakaoFont"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Copyright ®2022 RWU. ALL rights reserved."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

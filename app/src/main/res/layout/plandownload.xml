@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#FFFFB0CF"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="5dp">
+
+        <Button
+            android:id="@+id/pos_button2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="장소" />
+
+        <Button
+            android:id="@+id/memo_button2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="메모" />
+
+        <Button
+            android:id="@+id/cal_button2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="날짜" />
+
+
+    </LinearLayout>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:ellipsize="start"-->
+<!--        android:gravity="center"-->
+<!--        android:text="데이트파일" />-->
+
+    <Button
+        android:id="@+id/FileEditButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="파일 열기"
+        android:visibility="gone" />
+    <!--    <EditText-->
+    <!--        android:id="@+id/FileEdit"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:ellipsize="start"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#e9ecef" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:text="데이트장소" />-->
+
+    <TextView
+        android:id="@+id/posText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#e9ecef"
+        android:gravity="top"
+        android:ellipsize="start"
+        android:scrollbars="vertical" />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:text="데이트메모" />-->
+
+    <TextView
+        android:id="@+id/memoText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="6"
+        android:background="#e9ecef"
+        android:gravity="top"
+        android:ellipsize="start"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:text="데이트날짜" />-->
+
+    <TextView
+        android:id="@+id/dateText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="6"
+        android:background="#e9ecef"
+        android:gravity="top"
+        android:ellipsize="start"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+<!--    <EditText-->
+<!--        android:id="@+id/CalEdit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="#e9ecef"-->
+<!--        android:gravity="top"-->
+<!--        android:ellipsize="start"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:visibility="gone" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/confirm_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/cancel_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="취소" />
+
+    </LinearLayout>
+
+</LinearLayout>

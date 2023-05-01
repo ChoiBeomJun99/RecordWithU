@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="5dp">
+
+        <Button
+            android:id="@+id/pos_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="제목" />
+
+        <Button
+            android:id="@+id/memo_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="메모" />
+
+        <Button
+            android:id="@+id/cal_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="날짜" />
+
+        <Button
+            android:id="@+id/file_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="파일" />
+
+    </LinearLayout>
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="100dp"-->
+    <!--        android:layout_marginEnd="100dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:ellipsize="start"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="데이트파일" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/FileEditButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="파일 열기"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/uploadCheck"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <!--    <EditText-->
+    <!--        android:id="@+id/FileEdit"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:ellipsize="start"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#e9ecef" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="100dp"-->
+    <!--        android:layout_marginEnd="100dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="데이트장소" />-->
+
+    <EditText
+        android:id="@+id/posEdit"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_circle5"
+        android:gravity="top"
+        android:ellipsize="start"
+        android:visibility="visible"
+        android:scrollbars="vertical" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="100dp"-->
+    <!--        android:layout_marginEnd="100dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="데이트메모" />-->
+
+    <EditText
+        android:id="@+id/TextEdit"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="6"
+        android:background="@drawable/shape_circle5"
+        android:gravity="top"
+        android:ellipsize="start"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="100dp"-->
+    <!--        android:layout_marginEnd="100dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="데이트날짜" />-->
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:visibility="gone"/>
+    <!--    <EditText-->
+    <!--        android:id="@+id/CalEdit"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#e9ecef"-->
+    <!--        android:gravity="top"-->
+    <!--        android:ellipsize="start"-->
+    <!--        android:scrollbars="vertical"-->
+    <!--        android:visibility="gone" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#FEEECB"
+            android:textColor="#F08080"
+            android:fontFamily="@font/korea1"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="취소" />
+
+    </LinearLayout>
+
+</LinearLayout>

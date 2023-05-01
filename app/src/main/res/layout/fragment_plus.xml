@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plusFragContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:text="@string/hello_blank_fragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_marginTop="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_arrow_left_24dp"/>
+
+            <TextView
+                android:id="@+id/tv_row_calendar"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5.6sp"
+                android:text="@{output.localizedMonth}"
+                android:textColor="@color/quantum_grey"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:text="2021년 9월" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_marginTop="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_arrow_right_24dp" />
+        </LinearLayout>
+
+
+        <com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar
+            android:id="@+id/main_single_row_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:deselection="false"
+            app:longPress="false"
+            app:multiSelection="false"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginVertical="8dp">
+            <ImageView
+                android:id="@+id/visited_icon"
+                android:src="@drawable/maplocation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:fontFamily="@font/korea1"
+                android:textColor="@color/weakPurple"
+                android:text="방문한 곳"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:layout_marginLeft="12dp"/>
+            <TextView
+                android:id="@+id/totalPageCount"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:fontFamily="@font/korea1"
+                android:textColor="@color/weakPurple"
+                android:text="총 n장"
+                android:textSize="20dp"
+                android:gravity="center_vertical|right"
+                android:layout_marginHorizontal="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plus_Card"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="337dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/shape_circle4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/korea1"
+                android:gravity="center|left"
+                android:text="상세 정보"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/korea1"
+                    android:text="추억 장소 : "
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/place_name"
+                    android:layout_width="290dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/korea1"
+                    android:text="갱신 전"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/korea1"
+                    android:text="추억 내용 :  "
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="290dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/korea1"
+                    android:text="갱신 전"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/close_card_inPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/weakPurple"
+                    android:letterSpacing="0.3"
+                    android:text="닫기"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/record_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

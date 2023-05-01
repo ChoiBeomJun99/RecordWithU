@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageView_record"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_margin="40dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/shape_circle8"
+        android:clipToOutline="true"
+        app:srcCompat="@drawable/homeimage" />
+
+    <TextView
+        android:id="@+id/textView_record"
+        android:padding="15dp"
+        android:layout_width="250dp"
+        android:background="@drawable/shape_circle7"
+        android:layout_height="match_parent"
+        android:textColor="#F08080"
+        android:layout_margin="40dp"
+        android:text="DB에서 가져올 기록에 대한 데이터가 여기에 표시됩니다"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
